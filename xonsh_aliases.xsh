@@ -242,3 +242,25 @@ my_aliases |= {
     "gss": "git status -s",
     "gst": "git status",
 }
+
+
+
+
+"""
+============= DIRECTORIES ==============
+"""
+
+# Changing/making/removing directory
+
+my_aliases |= {
+    "..": "cd ..",
+    # '...' is taken by Ellipsis?? This is a bug in the lexer.
+    "....": "cd ../../..",
+    ".....": "cd ../../../..",
+    "......": "cd ../../../../..",
+    "md": "mkdir -p",
+    "rd": "rmdir",
+    "l": "ls -lah",
+    "ll": "ls -lh",
+    "la": "ls  -lAh",
+}
